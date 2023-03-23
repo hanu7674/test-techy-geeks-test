@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { API_HEADERS, API_URL } from '../../constants';
 import { Alert, Spinner } from 'react-bootstrap';
-import { useNavigate } from 'react-router-dom'
 
 function AutoVerifier() {
     const [apiStatus, setApiStatus] = useState(null);
@@ -9,7 +8,6 @@ function AutoVerifier() {
     const [responseData, setResponseData] = useState(null);
     const [error, setError] = useState(null);
     const [showError, setShowError] = useState(null);
-  const navigate = useNavigate()
 
     useEffect(() => {
         const intervalId = setInterval(() => {

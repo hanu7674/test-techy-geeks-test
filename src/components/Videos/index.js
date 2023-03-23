@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { Alert, Button, Modal, Spinner } from "react-bootstrap";
 import { API_HEADERS, API_URL } from "../../constants";
-import { useNavigate } from 'react-router-dom'
 
 const Videos = () => {
     const [openVideoModal, setOpenVideoModal] = useState(false);
@@ -9,7 +8,6 @@ const Videos = () => {
     const [apiResponse, setApiResponse] = useState([]);
     const [error, setError] = useState(null);
     const [showError, setShowError] = useState(null);
-    const navigate = useNavigate()
 
     const fetchData = () =>{
         setLoading(true);
