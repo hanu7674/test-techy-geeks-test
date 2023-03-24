@@ -11,7 +11,7 @@ import Videos from "../Videos";
 
 const router = createBrowserRouter([
     {
-      path: "/api",
+      path: "/",
       element: <Home/>,
       errorElement: <ErrorPage/>
     },
